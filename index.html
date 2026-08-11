@@ -15,6 +15,34 @@
 
     <!-- Tailwind CSS Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .fraunces {
+            font-family: "Fraunces", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "SOFT" 0,
+                "WONK" 0;
+        }
+
+        .manrope {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
     <script>
         tailwind.config = {
             theme: {
@@ -88,7 +116,8 @@
                     </div>
 
                     <!-- Main Hero Title with Exact Teal-to-Gold Shift -->
-                    <h1 class="font-serif text-5xl sm:text-6xl xl:text-7xl font-normal tracking-tight leading-[1.08]">
+                    <h1
+                        class="fraunces font-serif text-5xl sm:text-6xl xl:text-7xl font-normal tracking-tight leading-[1.08]">
                         <span class="block text-white">Pure Water.</span>
                         <span class="block mt-1">
                             <span class="text-[#28B8E8]">Smarter</span>
@@ -158,8 +187,7 @@
                         <div
                             class="bg-white rounded-2xl p-6 sm:p-10 flex items-center justify-center relative overflow-hidden aspect-square shadow-inner">
                             <!-- Appliance Showcase Image -->
-                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80"
-                                alt="PEQON Kitchen Chimney & RO Appliance"
+                            <img src="./images/peqon-bliss.png" alt="PEQON Kitchen Chimney & RO Appliance"
                                 class="object-contain w-full h-full drop-shadow-xl transform hover:scale-105 transition duration-500" />
 
                             <!-- Bottom-Right Floating Glass Badge (1M+ Homes) -->
@@ -190,8 +218,374 @@
 
             </div>
         </div>
+        <!-- section -->
     </main>
-    <!-- ================= 2. DYNAMIC FOOTER INJECTION ================= -->
+
+    <section>
+        <section class="w-full bg-[#071838] border-y border-[#132850] py-8 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-[1300px] mx-auto">
+
+                <!-- 5-Column Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-6 items-center justify-between">
+
+                    <!-- Item 1: ISO Certified -->
+                    <div class="flex items-center justify-start sm:justify-center space-x-3.5">
+                        <!-- Cyan Outline Shield/Check Icon -->
+                        <svg class="w-6 h-6 flex-shrink-0 text-[#00a8f0]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        <span class="text-white font-medium text-[15px] sm:text-[16px] tracking-wide whitespace-nowrap">
+                            ISO Certified
+                        </span>
+                    </div>
+
+                    <!-- Item 2: Premium Quality -->
+                    <div class="flex items-center justify-start sm:justify-center space-x-3.5">
+                        <!-- Cyan Outline Star Icon -->
+                        <svg class="w-6 h-6 flex-shrink-0 text-[#00a8f0]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                        </svg>
+                        <span class="text-white font-medium text-[15px] sm:text-[16px] tracking-wide whitespace-nowrap">
+                            Premium Quality
+                        </span>
+                    </div>
+
+                    <!-- Item 3: 2-Year Warranty -->
+                    <div class="flex items-center justify-start sm:justify-center space-x-3.5">
+                        <!-- Cyan Outline Bag/Warranty Icon -->
+                        <svg class="w-6 h-6 flex-shrink-0 text-[#00a8f0]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                        <span class="text-white font-medium text-[15px] sm:text-[16px] tracking-wide whitespace-nowrap">
+                            2-Year Warranty
+                        </span>
+                    </div>
+
+                    <!-- Item 4: Pan-India Reach -->
+                    <div class="flex items-center justify-start sm:justify-center space-x-3.5">
+                        <!-- Cyan Outline Globe Icon -->
+                        <svg class="w-6 h-6 flex-shrink-0 text-[#00a8f0]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                        <span class="text-white font-medium text-[15px] sm:text-[16px] tracking-wide whitespace-nowrap">
+                            Pan-India Reach
+                        </span>
+                    </div>
+
+                    <!-- Item 5: 24×7 Support -->
+                    <div class="flex items-center justify-start sm:justify-center space-x-3.5 col-span-2 sm:col-span-1">
+                        <!-- Cyan Outline Chat Bubble Icon -->
+                        <svg class="w-6 h-6 flex-shrink-0 text-[#00a8f0]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                        </svg>
+                        <span class="text-white font-medium text-[15px] sm:text-[16px] tracking-wide whitespace-nowrap">
+                            24×7 Support
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </section>
+    <!--  -->
+    <!-- OUR RANGE SECTION WRAPPER -->
+    <section class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-[#050f22]">
+
+        <!-- 1. TOP HEADER BLOCK -->
+        <div class="max-w-3xl mx-auto text-center mb-16 sm:mb-20">
+            <!-- Pill Badge -->
+            <span
+                class="inline-block bg-white/5 border border-white/10 text-[#60a5fa] text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+                OUR RANGE
+            </span>
+
+            <!-- Main Heading -->
+            <h1
+                class=" fraunces text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
+                Engineered to <span class="italic text-[#78bcfb] font-normal">elevate</span> every kitchen
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-gray-300/80 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                Three product families, one obsession — purity, performance and design that belongs in a premium home.
+            </p>
+        </div>
+
+        <!-- 2. THREE-COLUMN CARD GRID -->
+        <div class="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+
+            <!-- CARD 1: RO Water Purifiers -->
+            <div
+                class="bg-[#071329] border border-[#142647] rounded-[24px] sm:rounded-[32px] overflow-hidden flex flex-col justify-between hover:border-[#00a8f0]/50 transition-all duration-300 group shadow-lg">
+                <div>
+                    <!-- Image Wrapper with Bottom Navy Gradient Fade -->
+                    <div class="relative h-64 sm:h-72 w-full overflow-hidden bg-white">
+                        <img src="./images/peqon-mabel.png" alt="RO Water Purifiers"
+                            class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500">
+                        <!-- Smooth Gradient Overlay Blending Image into Card Background -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#071329] via-[#071329]/30 to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Card Text Area -->
+                    <div class="p-6 sm:p-8 pt-2">
+                        <h3 class="fraunces text-2xl font-bold text-white mb-3 tracking-wide">
+                            RO Water Purifiers
+                        </h3>
+                        <p class="text-gray-300/80 text-sm sm:text-[15px] leading-relaxed">
+                            Multi-stage RO + UV + copper systems that deliver mineral-balanced, great-tasting water on
+                            tap.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Footer Link -->
+                <div class="p-6 sm:p-8 pt-0">
+                    <a href="#"
+                        class="inline-flex items-center text-[#00a8f0] font-semibold text-sm sm:text-base hover:text-white transition-colors group/link">
+                        <span>Discover</span>
+                        <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1.5 transition-transform"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 2: Dispensers & Coolers -->
+            <div
+                class="bg-[#071329] border border-[#142647] rounded-[24px] sm:rounded-[32px] overflow-hidden flex flex-col justify-between hover:border-[#00a8f0]/50 transition-all duration-300 group shadow-lg">
+                <div>
+                    <!-- Image Wrapper with Bottom Navy Gradient Fade -->
+                    <div class="relative h-64 sm:h-72 w-full overflow-hidden bg-black">
+                        <img src="./images/peqon-life-5.jpg" alt="Dispensers & Coolers"
+                            class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500">
+                        <!-- Smooth Gradient Overlay Blending Image into Card Background -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#071329] via-[#071329]/30 to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Card Text Area -->
+                    <div class="p-6 sm:p-8 pt-2">
+                        <h3 class="fraunces text-2xl font-bold text-white mb-3 tracking-wide">
+                            Dispensers & Coolers
+                        </h3>
+                        <p class="text-gray-300/80 text-sm sm:text-[15px] leading-relaxed">
+                            Hot, normal and cold purified water on demand — sleek units engineered for homes and
+                            offices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Footer Link -->
+                <div class="p-6 sm:p-8 pt-0">
+                    <a href="#"
+                        class="inline-flex items-center text-[#00a8f0] font-semibold text-sm sm:text-base hover:text-white transition-colors group/link">
+                        <span>Discover</span>
+                        <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1.5 transition-transform"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 3: Genuine RO Parts -->
+            <div
+                class="bg-[#071329] border border-[#142647] rounded-[24px] sm:rounded-[32px] overflow-hidden flex flex-col justify-between hover:border-[#00a8f0]/50 transition-all duration-300 group shadow-lg">
+                <div>
+                    <!-- Image Wrapper with Bottom Navy Gradient Fade -->
+                    <div class="relative h-64 sm:h-72 w-full overflow-hidden bg-white">
+                        <img src="./images/peqon-part-oring.jpg" alt="Genuine RO Parts"
+                            class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500">
+                        <!-- Smooth Gradient Overlay Blending Image into Card Background -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#071329] via-[#071329]/30 to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Card Text Area -->
+                    <div class="p-6 sm:p-8 pt-2">
+                        <h3 class=" fraunces text-2xl font-bold text-white mb-3 tracking-wide">
+                            Genuine RO Parts
+                        </h3>
+                        <p class="text-gray-300/80 text-sm sm:text-[15px] leading-relaxed">
+                            Membranes, housings, filters and O-rings — precision components built to keep systems
+                            flawless.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Footer Link -->
+                <div class="p-6 sm:p-8 pt-0">
+                    <a href="#"
+                        class="inline-flex items-center text-[#00a8f0] font-semibold text-sm sm:text-base hover:text-white transition-colors group/link">
+                        <span>Discover</span>
+                        <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1.5 transition-transform"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 3. OPTIONAL FLOATING SCROLL TO TOP BUTTON (Bottom Right) -->
+        <a href="#"
+            class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-[#00a8f0] hover:bg-[#008fcc] text-white flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-110"
+            aria-label="Scroll to top">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+        </a>
+
+    </section>
+
+    <!-- ================= WHO WE ARE / ABOUT SECTION ================= -->
+    <section id="about" class="relative py-16 lg:py-10 bg-[#081022] text-white overflow-hidden">
+
+        <!-- Subtle Ambient Background Glow -->
+        <div
+            class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-[#28B8E8]/5 rounded-full blur-3xl pointer-events-none -z-10">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
+
+                <!-- ================= LEFT COLUMN: OVERLAPPING IMAGE SHOWCASE ================= -->
+                <div class="lg:col-span-6 relative px-4 sm:px-6 pt-6 pb-10 lg:py-8">
+
+                    <!-- 1. Top-Left Floating Gold Badge ("15+ Years of engineering") -->
+                    <div
+                        class="absolute top-0 left-0 sm:top-2 sm:left-2 z-30 bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] rounded-2xl p-4 sm:p-5 shadow-glow-gold">
+                        <span class="block font-serif text-2xl sm:text-3xl font-bold leading-none">15+</span>
+                        <span class="block text-[11px] sm:text-xs font-semibold leading-tight mt-1 max-w-[80px]">
+                            Years of engineering
+                        </span>
+                    </div>
+
+                    <!-- 2. Main Large White Product Showcase Card -->
+                    <div
+                        class="relative z-10 w-full max-w-lg mx-auto rounded-[32px] bg-white p-4 sm:p-6 shadow-2xl overflow-hidden">
+                        <!-- Brick Wall Background & Primary Image -->
+                        <div
+                            class="w-full aspect-[4/3] rounded-2xl overflow-hidden bg-gray-50 flex items-center justify-center relative">
+                            <img src="./images/peqon-life-3.jpg" alt="PEQON ISO Certified RO & Chimney Systems"
+                                class="w-full h-full object-contain p-2" />
+                        </div>
+                    </div>
+
+                    <!-- 3. Bottom-Right Overlapping Smaller Showcase Card -->
+                    <div
+                        class="absolute -bottom-4 right-0 sm:-bottom-6 sm:right-4 z-20 w-48 sm:w-64 rounded-[28px] bg-white p-3 sm:p-4 shadow-2xl border-4 border-[#081022]">
+                        <div
+                            class="w-full aspect-square rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center">
+                            <img src="./images/peqon-life-4.jpg" alt="PEQON Nixon Pro Water Purifier"
+                                class="w-full h-full object-contain p-1" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ================= RIGHT COLUMN: TEXT CONTENT & STATS ================= -->
+                <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+
+                    <!-- Section Badge / Pill -->
+                    <div
+                        class="inline-flex items-center px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/10 backdrop-blur-md">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-[#28B8E8]">
+                            WHO WE ARE
+                        </span>
+                    </div>
+
+                    <!-- Heading with Italic Cyan Accent -->
+                    <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight leading-[1.12]">
+                        <span>Purity, refined into a</span>
+                        <span class="block italic text-[#38BDF8] mt-1 font-serif">design object</span>
+                    </h2>
+
+                    <!-- Description Text -->
+                    <p class="text-gray-300 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        PEQON was founded on a simple belief — that the things which care for your health should also be
+                        beautiful. From our RO systems to our chimneys, every product is engineered in-house, tested
+                        obsessively, and finished to feel at home in the most considered spaces.
+                    </p>
+
+                    <!-- 4 Stat Counters Grid -->
+                    <!-- 4 Stat Counters Grid -->
+                    <div id="stats-container"
+                        class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-4 pb-2 border-t border-white/[0.08]">
+
+                        <!-- Stat 1: Years -->
+                        <div class="space-y-1">
+                            <div class="font-serif text-3xl sm:text-4xl font-bold text-[#38BDF8]">
+                                <span class="stat-counter" data-target="15" data-suffix="+">0</span>
+                            </div>
+                            <div class="text-xs sm:text-sm text-gray-400 font-medium">
+                                Years
+                            </div>
+                        </div>
+
+                        <!-- Stat 2: Customers -->
+                        <div class="space-y-1">
+                            <div class="font-serif text-3xl sm:text-4xl font-bold text-[#38BDF8]">
+                                <span class="stat-counter" data-target="1" data-suffix="M+">0</span>
+                            </div>
+                            <div class="text-xs sm:text-sm text-gray-400 font-medium">
+                                Customers
+                            </div>
+                        </div>
+
+                        <!-- Stat 3: Products -->
+                        <div class="space-y-1">
+                            <div class="font-serif text-3xl sm:text-4xl font-bold text-[#38BDF8]">
+                                <span class="stat-counter" data-target="120" data-suffix="+">0</span>
+                            </div>
+                            <div class="text-xs sm:text-sm text-gray-400 font-medium">
+                                Products
+                            </div>
+                        </div>
+
+                        <!-- Stat 4: Cities -->
+                        <div class="space-y-1">
+                            <div class="font-serif text-3xl sm:text-4xl font-bold text-[#38BDF8]">
+                                <span class="stat-counter" data-target="480" data-suffix="+">0</span>
+                            </div>
+                            <div class="text-xs sm:text-sm text-gray-400 font-medium">
+                                Cities
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Call to Action Button -->
+                    <div class="pt-2 flex justify-center lg:justify-start">
+                        <a href="#"
+                            class="inline-block px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 transition duration-200">
+                            Read our story
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- ================= DYNAMIC FOOTER INJECTION ================= -->
     <div data-include="include/footer.html"></div>
 
@@ -239,6 +633,63 @@
                 mobileMenu.classList.remove("translate-y-0");
                 mobileMenu.classList.add("-translate-y-full");
                 document.body.style.overflow = ""; // Restore background scrolling
+            }
+        });
+    </script>
+    
+    <!-- ================= STATS AUTO-COUNTER ANIMATION SCRIPT ================= -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const statsContainer = document.getElementById("stats-container");
+            const counters = document.querySelectorAll(".stat-counter");
+            let hasAnimated = false;
+
+            // Easing function for smooth deceleration at the end of the count
+            const easeOutQuad = (t) => t * (2 - t);
+
+            const animateCounters = () => {
+                counters.forEach((counter) => {
+                    const target = +counter.getAttribute("data-target");
+                    const suffix = counter.getAttribute("data-suffix") || "";
+                    const duration = 2000; // Total animation duration in milliseconds (2 seconds)
+                    const frameRate = 1000 / 60; // 60 FPS
+                    const totalFrames = Math.round(duration / frameRate);
+                    let currentFrame = 0;
+
+                    const counterInterval = setInterval(() => {
+                        currentFrame++;
+                        const progress = easeOutQuad(currentFrame / totalFrames);
+                        const currentVal = Math.round(target * progress);
+
+                        counter.innerText = currentVal + suffix;
+
+                        if (currentFrame === totalFrames) {
+                            clearInterval(counterInterval);
+                            counter.innerText = target + suffix; // Ensure exact target is set
+                        }
+                    }, frameRate);
+                });
+            };
+
+            // Intersection Observer: Triggers animation only once when section enters viewport
+            if ("IntersectionObserver" in window && statsContainer) {
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting && !hasAnimated) {
+                                hasAnimated = true;
+                                animateCounters();
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    },
+                    { threshold: 0.3 } // Triggers when 30% of the stats row is visible
+                );
+
+                observer.observe(statsContainer);
+            } else {
+                // Fallback for older browsers
+                animateCounters();
             }
         });
     </script>
@@ -293,6 +744,7 @@
                 document.documentElement.style.overflow = "hidden";
                 return;
             }
+
 
             // CLOSE: Slide drawer up and restore scrolling
             const clickedMenuLink = e.target.closest("#mobile-menu nav a, #mobile-menu div a");
