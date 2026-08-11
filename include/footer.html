@@ -16,7 +16,8 @@
 
             <!-- 5-Column Grid Layout matching Screenshot -->
             <!-- ================= RESPONSIVE FOOTER GRID ================= -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-12 gap-y-10 gap-x-6 sm:gap-x-8 pb-14">
+            <!-- ================= PROFESSIONAL 2-COLUMN MOBILE FOOTER GRID ================= -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-12 gap-y-12 gap-x-6 sm:gap-x-8 pb-14">
 
                 <!-- Col 1: Brand & Socials (Full width on mobile/tablet, Spans 4 cols on desktop) -->
                 <div class="col-span-2 sm:col-span-3 lg:col-span-4 space-y-5">
@@ -63,7 +64,7 @@
                     </div>
                 </div>
 
-                <!-- Col 2: Products (1 col on mobile -> Left side) -->
+                <!-- Col 2: Products (1 col on mobile -> Left column) -->
                 <div class="col-span-1 lg:col-span-2 space-y-4">
                     <h4 class="text-white font-bold text-xs uppercase tracking-widest">PRODUCTS</h4>
                     <ul class="space-y-3 text-sm text-gray-400">
@@ -74,7 +75,7 @@
                     </ul>
                 </div>
 
-                <!-- Col 3: Company (1 col on mobile -> Right side next to Products) -->
+                <!-- Col 3: Company (1 col on mobile -> Right column next to Products) -->
                 <div class="col-span-1 lg:col-span-2 space-y-4">
                     <h4 class="text-white font-bold text-xs uppercase tracking-widest">COMPANY</h4>
                     <ul class="space-y-3 text-sm text-gray-400">
@@ -85,7 +86,7 @@
                     </ul>
                 </div>
 
-                <!-- Col 4: Quick Links (1 col on mobile -> Left side below Products) -->
+                <!-- Col 4: Quick Links (1 col on mobile -> Left column on next row) -->
                 <div class="col-span-1 lg:col-span-2 space-y-4">
                     <h4 class="text-white font-bold text-xs uppercase tracking-widest">QUICK LINKS</h4>
                     <ul class="space-y-3 text-sm text-gray-400">
@@ -96,26 +97,40 @@
                     </ul>
                 </div>
 
-                <!-- Col 5: Newsletter (Full width on mobile so email input form stays wide) -->
-                <div class="col-span-2 sm:col-span-3 lg:col-span-2 space-y-4">
+                <!-- Col 5: Newsletter (1 col on mobile -> Right column next to Quick Links, email input below description) -->
+                <div class="col-span-1 lg:col-span-2 space-y-4">
                     <h4 class="text-white font-bold text-xs uppercase tracking-widest">NEWSLETTER</h4>
                     <p class="text-sm text-gray-400">Purity tips & offers, occasionally.</p>
-
-                    <!-- Email Input + Gold Arrow Button -->
-                    <form class="flex items-center gap-2 pt-1">
+                    <form class="hidden sm:flex flex-row items-stretch sm:items-center gap-2.5 pt-1">
                         <input type="email" placeholder="Email address"
                             class="w-full bg-white/[0.05] border border-white/10 rounded-full px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#28B8E8] transition"
                             required />
                         <button type="submit" aria-label="Subscribe"
-                            class="shrink-0 w-10 h-10 rounded-full bg-[#FBC24A] hover:bg-[#F3A833] text-[#0A1325] flex items-center justify-center transition shadow-glow-gold">
+                            class="self-end sm:self-auto shrink-0 w-10 h-10 rounded-full bg-[#FBC24A] hover:bg-[#F3A833] text-[#0A1325] flex items-center justify-center transition shadow-glow-gold">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                     d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
                         </button>
                     </form>
+
                 </div>
 
+            </div>
+            <div>
+                <!-- Email Input + Gold Arrow Button (Stacked professionally below text) -->
+                <form class="sm:hidden flex flex-row items-stretch sm:items-center gap-2.5 pt-1">
+                    <input type="email" placeholder="Email address"
+                        class="w-full bg-white/[0.05] border border-white/10 rounded-full px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#28B8E8] transition"
+                        required />
+                    <button type="submit" aria-label="Subscribe"
+                        class="self-end sm:self-auto shrink-0 w-10 h-10 rounded-full bg-[#FBC24A] hover:bg-[#F3A833] text-[#0A1325] flex items-center justify-center transition shadow-glow-gold">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                </form>
             </div>
             <!-- Copyright & Legal Links Row -->
             <div
