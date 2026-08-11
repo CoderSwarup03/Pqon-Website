@@ -15,10 +15,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- 5-Column Grid Layout matching Screenshot -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 pb-14">
+            <!-- ================= RESPONSIVE FOOTER GRID ================= -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-12 gap-y-10 gap-x-6 sm:gap-x-8 pb-14">
 
-                <!-- Col 1: Brand & Socials (Spans 4 columns on desktop) -->
-                <div class="lg:col-span-4 space-y-5">
+                <!-- Col 1: Brand & Socials (Full width on mobile/tablet, Spans 4 cols on desktop) -->
+                <div class="col-span-2 sm:col-span-3 lg:col-span-4 space-y-5">
                     <a href="#" class="inline-block">
                         <img src="images/logo.png" alt="PEQON Logo" class="h-10 w-auto" />
                     </a>
@@ -62,8 +63,8 @@
                     </div>
                 </div>
 
-                <!-- Col 2: Products (Spans 2 columns) -->
-                <div class="lg:col-span-2 space-y-4">
+                <!-- Col 2: Products (1 col on mobile -> Left side) -->
+                <div class="col-span-1 lg:col-span-2 space-y-4">
                     <h4 class="text-white font-bold text-xs uppercase tracking-widest">PRODUCTS</h4>
                     <ul class="space-y-3 text-sm text-gray-400">
                         <li><a href="#" class="hover:text-white transition">RO Water Purifiers</a></li>
@@ -73,8 +74,8 @@
                     </ul>
                 </div>
 
-                <!-- Col 3: Company (Spans 2 columns) -->
-                <div class="lg:col-span-2 space-y-4">
+                <!-- Col 3: Company (1 col on mobile -> Right side next to Products) -->
+                <div class="col-span-1 lg:col-span-2 space-y-4">
                     <h4 class="text-white font-bold text-xs uppercase tracking-widest">COMPANY</h4>
                     <ul class="space-y-3 text-sm text-gray-400">
                         <li><a href="#" class="hover:text-white transition">About Us</a></li>
@@ -84,8 +85,8 @@
                     </ul>
                 </div>
 
-                <!-- Col 4: Quick Links (Spans 2 columns) -->
-                <div class="lg:col-span-2 space-y-4">
+                <!-- Col 4: Quick Links (1 col on mobile -> Left side below Products) -->
+                <div class="col-span-1 lg:col-span-2 space-y-4">
                     <h4 class="text-white font-bold text-xs uppercase tracking-widest">QUICK LINKS</h4>
                     <ul class="space-y-3 text-sm text-gray-400">
                         <li><a href="#" class="hover:text-white transition">Get a Quote</a></li>
@@ -95,8 +96,8 @@
                     </ul>
                 </div>
 
-                <!-- Col 5: Newsletter (Spans 2 columns) -->
-                <div class="lg:col-span-2 space-y-4">
+                <!-- Col 5: Newsletter (Full width on mobile so email input form stays wide) -->
+                <div class="col-span-2 sm:col-span-3 lg:col-span-2 space-y-4">
                     <h4 class="text-white font-bold text-xs uppercase tracking-widest">NEWSLETTER</h4>
                     <p class="text-sm text-gray-400">Purity tips & offers, occasionally.</p>
 
@@ -116,7 +117,6 @@
                 </div>
 
             </div>
-
             <!-- Copyright & Legal Links Row -->
             <div
                 class="border-t border-white/[0.08] pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
