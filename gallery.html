@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEQON - Pure Water. Smarter Living.</title>
+
+    <!-- Google Fonts: Fraunces & Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .fraunces {
+            font-family: "Fraunces", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "SOFT" 0,
+                "WONK" 0;
+        }
+
+        .manrope {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                        serif: ['Fraunces', 'serif'],
+                    },
+                    colors: {
+                        navy: {
+                            950: '#060B14',
+                            900: '#0A1325',
+                            800: '#111D35',
+                            700: '#182744',
+                        },
+                        gold: {
+                            400: '#FBC24A',
+                            500: '#F3A833',
+                        },
+                        cyanAccent: '#28B8E8',
+                    },
+                    boxShadow: {
+                        'glow-gold': '0 0 35px -5px rgba(251, 194, 74, 0.45)',
+                        'glass-dark': '0 25px 50px -12px rgba(0, 0, 0, 0.65)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#0A1325] sm:bg-[#060B14] text-white font-sans min-h-screen relative overflow-x-hidden">
+
+    <!-- ================= HEADER SECTION ================= -->
+    <div data-include="include/header.html"></div>
+
+    <!-- ================= GALLERY HERO BANNER ================= -->
+    <section
+        class="relative w-full h-[40vh] min-h-[300px] lg:min-h-[400px] flex items-center overflow-hidden bg-[#081022]">
+
+        <!-- 1. Background Image -->
+        <img src="./images/pqon9.jpeg" alt="PEQON Gallery"
+            class="absolute inset-0 w-full h-full object-cover z-0 opacity-60 transform scale-105" />
+
+        <!-- 2. Gradient Overlays (For Text Readability & Theme Blending) -->
+        <!-- Dark fade from the left -->
+        <div
+            class="absolute inset-0 z-10 bg-gradient-to-r from-[#081022] via-[#081022]/70 to-transparent pointer-events-none">
+        </div>
+        <!-- Dark fade at the bottom to blend into the next section -->
+        <div
+            class="absolute inset-0 z-10 bg-gradient-to-b from-[#081022]/30 via-transparent to-[#081022] pointer-events-none">
+        </div>
+
+        <!-- 3. Content Container (Breadcrumbs & Title) -->
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+
+            <!-- Path Details / Breadcrumbs -->
+            <nav class="flex items-center gap-2.5 text-sm font-medium mb-4 sm:mb-6" aria-label="Breadcrumb">
+                <a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-200">
+                    Home
+                </a>
+
+                <!-- Separator Arrow -->
+                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+
+                <!-- Current Page -->
+                <span class="text-[#38BDF8]" aria-current="page">
+                    Gallery
+                </span>
+            </nav>
+
+            <!-- Page Title -->
+            <h1
+                class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight leading-[1.12] text-white drop-shadow-md">
+                Our <span class="italic text-[#38BDF8]">Gallery</span>
+            </h1>
+
+            <!-- Optional Subtitle -->
+            <p class="mt-4 text-gray-300 text-base sm:text-lg max-w-xl font-normal leading-relaxed drop-shadow-sm">
+                Explore our elegant installations, premium product showcases, and see how PEQON transforms modern
+                kitchens.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECT & PRODUCT SHOWCASE GALLERY ================= -->
+    <!-- ================= PROJECT & PRODUCT SHOWCASE GALLERY ================= -->
+    <section id="gallery-showcase" class="relative py-16 lg:py-28 bg-[#081022] text-white overflow-hidden">
+
+        <!-- Ambient Background Glows -->
+        <div
+            class="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-[#28B8E8]/5 rounded-full blur-3xl pointer-events-none -z-10">
+        </div>
+        <div
+            class="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-[#FBC24A]/5 rounded-full blur-3xl pointer-events-none -z-10">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+                <!-- Pill Badge -->
+                <div
+                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/10 backdrop-blur-md">
+                    <span class="text-xs font-semibold tracking-widest uppercase text-[#38BDF8]">
+                        OUR SHOWCASE
+                    </span>
+                </div>
+
+                <!-- Main Heading -->
+                <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight leading-[1.12]">
+                    Projects &amp; <span class="italic text-[#38BDF8]">Products</span>
+                </h2>
+
+                <p class="text-gray-300 text-base sm:text-lg font-normal leading-relaxed max-w-2xl mx-auto">
+                    Browse our high-quality image gallery featuring real kitchen installations and premium PEQON
+                    appliances in action.
+                </p>
+            </div>
+
+            <!-- ================= 1:1 SQUARE GALLERY GRID ================= -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+
+                <!-- Gallery Item 1 (Product) -->
+                <!-- Note: bg-[#0E1A30] (or bg-white depending on your image backgrounds) with object-contain -->
+                <div
+                    class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg bg-[#0E1A30] flex items-center justify-center aspect-square cursor-pointer">
+                    <img src="./images/pqon5.jpeg" alt="PEQON Chimney Product"
+                        class="w-full h-full rounded-3xl object-cover object-contain transition-transform duration-700 group-hover:scale-105" />
+
+                    <!-- Hover Overlay -->
+                    <div
+                        class="absolute inset-0 bg-[#081022]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 backdrop-blur-[2px]">
+                        <span
+                            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                        </span>
+                        <span
+                            class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-[#FBC24A] transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                            Product
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 (Project) -->
+                <div
+                    class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg bg-[#0E1A30] flex items-center justify-center aspect-square cursor-pointer">
+                    <img src="./images/WhatsApp Image 2026-08-11 at 3.51.42 PM.jpeg" alt="Kitchen Installation Project"
+                        class="w-full h-full rounded-3xl object-cover object-contain transition-transform duration-700 group-hover:scale-105" />
+
+                    <!-- Hover Overlay -->
+                    <div
+                        class="absolute inset-0 bg-[#081022]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 backdrop-blur-[2px]">
+                        <span
+                            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                        </span>
+                        <span
+                            class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-[#38BDF8] transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                            Project
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 (Product) -->
+                <div
+                    class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg bg-[#0E1A30] flex items-center justify-center aspect-square cursor-pointer">
+                    <img src="./images/pqon11.jpeg" alt="PEQON Water Purifier"
+                        class="w-full h-full rounded-3xl object-cover object-contain transition-transform duration-700 group-hover:scale-105" />
+
+                    <!-- Hover Overlay -->
+                    <div
+                        class="absolute inset-0 bg-[#081022]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 backdrop-blur-[2px]">
+                        <span
+                            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                        </span>
+                        <span
+                            class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-[#FBC24A] transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                            Product
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 (Project) -->
+                <div
+                    class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg bg-[#0E1A30] flex items-center justify-center aspect-square cursor-pointer">
+                    <img src="./images/WhatsApp Image 2026-08-11 at 3.51.39 PM.jpeg" alt="Modern Kitchen Setup"
+                        class="w-full h-full rounded-3xl object-cover object-contain transition-transform duration-700 group-hover:scale-105" />
+
+                    <!-- Hover Overlay -->
+                    <div
+                        class="absolute inset-0 bg-[#081022]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 backdrop-blur-[2px]">
+                        <span
+                            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                        </span>
+                        <span
+                            class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-[#38BDF8] transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                            Project
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 (Product) -->
+                <div
+                    class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg bg-[#0E1A30] flex items-center justify-center aspect-square cursor-pointer">
+                    <img src="./images/WhatsApp Image 2026-08-11 at 3.51.46 PM.jpeg" alt="PEQON Spare Parts"
+                        class="w-full h-full rounded-3xl object-cover object-contain transition-transform duration-700 group-hover:scale-105" />
+
+                    <!-- Hover Overlay -->
+                    <div
+                        class="absolute inset-0 bg-[#081022]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 backdrop-blur-[2px]">
+                        <span
+                            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                        </span>
+                        <span
+                            class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-[#FBC24A] transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                            Product
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 (Project) -->
+                <div
+                    class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg bg-[#0E1A30] flex items-center justify-center aspect-square cursor-pointer ">
+                    <img src="./images/pqon4.jpeg" alt="Commercial Installation"
+                        class="w-full h-full rounded-3xl object-cover object-contain transition-transform duration-700 group-hover:scale-105" />
+
+                    <!-- Hover Overlay -->
+                    <div
+                        class="absolute inset-0 bg-[#081022]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 backdrop-blur-[2px]">
+                        <span
+                            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                        </span>
+                        <span
+                            class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-[#38BDF8] transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                            Project
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 (Product) -->
+                <div
+                    class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg bg-[#0E1A30] flex items-center justify-center aspect-square cursor-pointer">
+                    <img src="./images/pqon1.jpeg" alt="PEQON Nixon Unit"
+                        class="w-full h-full rounded-3xl object-cover object-contain transition-transform duration-700 group-hover:scale-105" />
+
+                    <!-- Hover Overlay -->
+                    <div
+                        class="absolute inset-0 bg-[#081022]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 backdrop-blur-[2px]">
+                        <span
+                            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                        </span>
+                        <span
+                            class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-[#FBC24A] transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                            Product
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 (Project) -->
+                <div
+                    class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg bg-[#0E1A30] flex items-center justify-center aspect-square cursor-pointer">
+                    <img src="./images/pqon9.jpeg" alt="Home Setup"
+                        class="w-full h-full  rounded-3xl object-cover object-contain transition-transform duration-700 group-hover:scale-105" />
+
+                    <!-- Hover Overlay -->
+                    <div
+                        class="absolute inset-0 bg-[#081022]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 backdrop-blur-[2px]">
+                        <span
+                            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                        </span>
+                        <span
+                            class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-[#38BDF8] transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                            Project
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LIGHTBOX MODAL (HIDDEN BY DEFAULT) ================= -->
+    <div id="gallery-lightbox"
+        class="fixed inset-0 z-[110] bg-[#050A14]/95 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4 sm:p-8">
+
+        <!-- Close Button -->
+        <button id="close-lightbox" aria-label="Close Gallery Modal"
+            class="absolute top-6 right-6 sm:top-8 sm:right-8 w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors z-10 shadow-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <!-- Rendered Image -->
+        <img id="lightbox-image" src="" alt="Gallery Fullscreen"
+            class="max-w-full max-h-full object-contain rounded-2xl shadow-2xl scale-95 transition-transform duration-300 ease-out" />
+    </div>
+
+    <!-- ================= LIGHTBOX SCRIPT ================= -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const lightbox = document.getElementById("gallery-lightbox");
+            const lightboxImg = document.getElementById("lightbox-image");
+            const closeLightboxBtn = document.getElementById("close-lightbox");
+            const galleryItems = document.querySelectorAll(".gallery-item img");
+
+            if (!lightbox || !lightboxImg) return;
+
+            // Open Lightbox
+            const openLightbox = (src) => {
+                lightboxImg.src = src;
+                lightbox.classList.remove("opacity-0", "pointer-events-none");
+                lightbox.classList.add("opacity-100", "pointer-events-auto");
+
+                // Add slight delay to trigger CSS transform animation
+                setTimeout(() => {
+                    lightboxImg.classList.remove("scale-95");
+                    lightboxImg.classList.add("scale-100");
+                }, 10);
+
+                // Lock background scroll
+                document.body.style.overflow = "hidden";
+            };
+
+            // Close Lightbox
+            const closeLightbox = () => {
+                lightbox.classList.remove("opacity-100", "pointer-events-auto");
+                lightbox.classList.add("opacity-0", "pointer-events-none");
+
+                lightboxImg.classList.remove("scale-100");
+                lightboxImg.classList.add("scale-95");
+
+                // Restore background scroll
+                document.body.style.overflow = "";
+
+                // Clear src after animation completes
+                setTimeout(() => { lightboxImg.src = ""; }, 300);
+            };
+
+            // Attach clicks to grid images
+            galleryItems.forEach(img => {
+                img.closest('.gallery-item').addEventListener("click", () => {
+                    openLightbox(img.src);
+                });
+            });
+
+            // Close when X is clicked
+            if (closeLightboxBtn) {
+                closeLightboxBtn.addEventListener("click", closeLightbox);
+            }
+
+            // Close when background is clicked
+            lightbox.addEventListener("click", (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <!-- ================= DYNAMIC FOOTER INJECTION ================= -->
+    <div data-include="include/footer.html"></div>
+
+    <!-- ================= GLOBAL SCRIPT: CUSTOM BUTTERY-SMOOTH SCROLL + MOBILE MENU ================= -->
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            // --- Step 1: Load HTML Partials (Header & Footer) ---
+            const includes = document.querySelectorAll("[data-include]");
+
+            for (const el of includes) {
+                const filePath = el.getAttribute("data-include");
+                try {
+                    const response = await fetch(filePath);
+                    if (!response.ok) {
+                        throw new Error(`Failed to load ${filePath}: ${response.statusText}`);
+                    }
+                    const htmlContent = await response.text();
+                    el.innerHTML = htmlContent;
+                } catch (error) {
+                    console.error("Error loading include:", error);
+                    el.innerHTML = `<p class="text-red-400 text-xs py-2">Failed to load ${filePath}</p>`;
+                }
+            }
+
+            // --- Step 2: Show/Hide Back-to-Top Button on Page Scroll ---
+            window.addEventListener("scroll", () => {
+                const backToTopBtn = document.getElementById("back-to-top");
+                if (!backToTopBtn) return;
+
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.remove("opacity-0", "pointer-events-none");
+                    backToTopBtn.classList.add("opacity-100");
+                } else {
+                    backToTopBtn.classList.remove("opacity-100");
+                    backToTopBtn.classList.add("opacity-0", "pointer-events-none");
+                }
+            });
+        });
+
+        /**
+         * Custom Smooth Scroll to Top
+         * @param {number} duration - Total animation time in milliseconds (900ms = smooth luxury feel)
+         */
+        function customSmoothScrollToTop(duration = 900) {
+            const startPosition = window.scrollY || document.documentElement.scrollTop;
+            if (startPosition === 0) return;
+
+            const startTime = performance.now();
+
+            // Smooth Cubic Easing: Starts gentle, moves consistently, cushions gracefully at the top
+            const easeInOutCubic = (t) =>
+                t < 0.5
+                    ? 4 * t * t * t
+                    : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+            function scrollAnimation(currentTime) {
+                const timeElapsed = currentTime - startTime;
+                const progress = Math.min(timeElapsed / duration, 1);
+                const easeProgress = easeInOutCubic(progress);
+
+                window.scrollTo(0, startPosition * (1 - easeProgress));
+
+                if (progress < 1) {
+                    requestAnimationFrame(scrollAnimation);
+                }
+            }
+
+            requestAnimationFrame(scrollAnimation);
+        }
+
+        // --- Step 3: Event Delegation for UI Click Actions ---
+        document.addEventListener("click", (e) => {
+            // 1. CUSTOM BUTTERY-SMOOTH BACK-TO-TOP HANDLER
+            const backToTopBtn = e.target.closest("#back-to-top");
+            if (backToTopBtn) {
+                e.preventDefault();
+                customSmoothScrollToTop(900); // 900ms duration for a luxurious smooth scroll
+                return;
+            }
+
+            // 2. MOBILE MENU DRAWER HANDLER
+            const openBtn = e.target.closest("#open-mobile-menu");
+            const closeBtn = e.target.closest("#close-mobile-menu");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            if (!mobileMenu) return;
+
+            // OPEN: Slide drawer down from top
+            if (openBtn) {
+                mobileMenu.classList.remove("-translate-y-full");
+                mobileMenu.classList.add("translate-y-0");
+                document.body.style.overflow = "hidden";
+                document.documentElement.style.overflow = "hidden";
+                return;
+            }
+
+            // CLOSE: Slide drawer back up
+            const clickedMenuLink = e.target.closest("#mobile-menu nav a, #mobile-menu div a");
+            if (closeBtn || clickedMenuLink) {
+                mobileMenu.classList.remove("translate-y-0");
+                mobileMenu.classList.add("-translate-y-full");
+                document.body.style.overflow = "";
+                document.documentElement.style.overflow = "";
+            }
+        });
+    </script>
+
+
+    <!-- ================= AUTO-SLIDER CAROUSEL SCRIPT ================= -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slides = document.querySelectorAll(".testimonial-slide");
+            const dots = document.querySelectorAll(".testimonial-dot");
+            let currentSlide = 0;
+            let slideInterval;
+
+            if (!slides.length || !dots.length) return;
+
+            const showSlide = (index) => {
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        // Show active slide
+                        slide.classList.remove("opacity-0", "scale-95", "pointer-events-none");
+                        slide.classList.add("opacity-100", "scale-100");
+                    } else {
+                        // Hide inactive slides
+                        slide.classList.remove("opacity-100", "scale-100");
+                        slide.classList.add("opacity-0", "scale-95", "pointer-events-none");
+                    }
+                });
+
+                // Update Pagination Dots
+                dots.forEach((dot, i) => {
+                    if (i === index) {
+                        dot.classList.remove("w-2", "bg-white/20", "hover:bg-white/40");
+                        dot.classList.add("w-8", "bg-[#28B8E8]");
+                    } else {
+                        dot.classList.remove("w-8", "bg-[#28B8E8]");
+                        dot.classList.add("w-2", "bg-white/20", "hover:bg-white/40");
+                    }
+                });
+
+                currentSlide = index;
+            };
+
+            const nextSlide = () => {
+                const nextIndex = (currentSlide + 1) % slides.length;
+                showSlide(nextIndex);
+            };
+
+            // Start Auto-Cycle (4500ms / 4.5 seconds)
+            const startSlider = () => {
+                slideInterval = setInterval(nextSlide, 4500);
+            };
+
+            const resetSliderTimer = () => {
+                clearInterval(slideInterval);
+                startSlider();
+            };
+
+            // Add click listeners to dots for manual navigation
+            dots.forEach((dot) => {
+                dot.addEventListener("click", (e) => {
+                    const targetIndex = parseInt(e.target.getAttribute("data-index"), 10);
+                    showSlide(targetIndex);
+                    resetSliderTimer(); // Resets auto-scroll timer when user clicks manually
+                });
+            });
+
+            // Initialize Auto Slider
+            startSlider();
+        });
+    </script>
+
+    <!-- header & footer link script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            // --- Step 1: Load HTML Partials (Header & Footer) ---
+            const includes = document.querySelectorAll("[data-include]");
+
+            for (const el of includes) {
+                const filePath = el.getAttribute("data-include");
+                try {
+                    const response = await fetch(filePath);
+                    if (!response.ok) {
+                        throw new Error(`Failed to load ${filePath}: ${response.statusText}`);
+                    }
+                    const htmlContent = await response.text();
+                    el.innerHTML = htmlContent;
+                } catch (error) {
+                    console.error("Error loading include:", error);
+                    el.innerHTML = `<p class="text-red-400 text-xs py-2">Failed to load ${filePath}</p>`;
+                }
+            }
+        });
+
+        // --- Step 2: Event Delegation for UI Controls ---
+        document.addEventListener("click", (e) => {
+            // 1. BACK TO TOP BUTTON HANDLER
+            const backToTopBtn = e.target.closest("#back-to-top");
+            if (backToTopBtn) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+                return;
+            }
+
+            // 2. MOBILE MENU DRAWER HANDLER
+            const openBtn = e.target.closest("#open-mobile-menu");
+            const closeBtn = e.target.closest("#close-mobile-menu");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            if (!mobileMenu) return;
+
+            // OPEN: Slide drawer down and lock scrolling
+            if (openBtn) {
+                mobileMenu.classList.remove("-translate-y-full");
+                mobileMenu.classList.add("translate-y-0");
+                document.body.style.overflow = "hidden";
+                document.documentElement.style.overflow = "hidden";
+                return;
+            }
+
+
+            // CLOSE: Slide drawer up and restore scrolling
+            const clickedMenuLink = e.target.closest("#mobile-menu nav a, #mobile-menu div a");
+            if (closeBtn || clickedMenuLink) {
+                mobileMenu.classList.remove("translate-y-0");
+                mobileMenu.classList.add("-translate-y-full");
+                document.body.style.overflow = "";
+                document.documentElement.style.overflow = "";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+</body>
+
+</html>
