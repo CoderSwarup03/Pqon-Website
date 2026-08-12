@@ -198,161 +198,1041 @@
             <div class="relative min-h-[500px]">
 
                 <!-- 1. WATER PURIFIER TAB (Dummy Data) -->
+                <!-- ================= 1. WATER PURIFIER TAB (MULTIPLE PRODUCTS) ================= -->
                 <div id="tab-purifier"
                     class="tab-panel transition-all duration-500 ease-in-out opacity-100 translate-y-0">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-                        <!-- Product Image -->
-                        <div
-                            class="lg:col-span-5 bg-white rounded-3xl p-8 sm:p-12 shadow-2xl flex items-center justify-center aspect-square relative group overflow-hidden">
-                            <img src="./images/pqon10.jpeg" alt="PEQON Marvela"
-                                class="w-full h-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
-                        </div>
-                        <!-- Product Details -->
-                        <div class="lg:col-span-7 space-y-6">
-                            <div class="space-y-2">
-                                <h3 class="font-serif text-3xl sm:text-4xl font-bold text-white">MARVELA PRO</h3>
-                                <p class="text-xl text-[#FBC24A] font-medium">Price :- 18,500 /-</p>
+
+                    <!-- Vertical Stack Container for Multiple Products -->
+                    <div class="flex flex-col gap-16 lg:gap-24">
+
+                        <!-- ================= PRODUCT 1 ================= -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start relative">
+
+                            <!-- Product 1 Image (Sticky on Desktop) -->
+                            <div
+                                class="lg:col-span-5 sticky top-28 bg-white rounded-3xl p-8 sm:p-12 shadow-2xl flex items-center justify-center aspect-square group overflow-hidden">
+                                <img src="./images/nixon.png" alt="PEQON Nixon Pro"
+                                    class="w-full h-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
                             </div>
 
-                            <!-- Specs Table -->
-                            <div class="bg-[#111D35]/50 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
-                                <ul class="divide-y divide-white/10 text-sm sm:text-base">
-                                    <li class="py-3 flex justify-between"><span
-                                            class="text-gray-400">Purification</span><span
-                                            class="font-medium text-white">RO + UV + UF + Copper</span></li>
-                                    <li class="py-3 flex justify-between"><span class="text-gray-400">Storage
-                                            Capacity</span><span class="font-medium text-white">12 Liters</span></li>
-                                    <li class="py-3 flex justify-between"><span
-                                            class="text-gray-400">Installation</span><span
-                                            class="font-medium text-white">Wall Mount / Table Top</span></li>
-                                    <li class="py-3 flex justify-between"><span class="text-gray-400">Filter
-                                            Life</span><span class="font-medium text-white">6000 Liters</span></li>
-                                    <li class="py-3"><span class="text-gray-400 block mb-1">Features</span><span
-                                            class="font-medium text-white">Real-time TDS Display, Zero Water Wastage
-                                            Technology</span></li>
-                                </ul>
+                            <!-- Product 1 Details -->
+                            <div class="lg:col-span-7 flex flex-col space-y-6">
+
+                                <!-- Header & Price -->
+                                <div class="space-y-2">
+                                    <h3
+                                        class="font-serif text-3xl sm:text-4xl font-bold text-white uppercase border-b-2 border-[#FBC24A] pb-2 inline-block">
+                                        NIXON
+                                    </h3>
+                                    <!-- Uncomment if you want to show price -->
+                                    <!-- <p class="text-xl text-[#FBC24A] font-medium pt-2">Price :- 18,500 /-</p> -->
+                                </div>
+
+                                <!-- Specs Table Container -->
+                                <div
+                                    class="bg-[#111D35]/50 border border-white/10 rounded-2xl backdrop-blur-sm overflow-hidden">
+
+                                    <!-- Top Spec Header -->
+                                    <div
+                                        class="px-6 py-3.5 bg-white/[0.02] border-b border-white/10 text-xs sm:text-sm font-bold tracking-widest text-[#38BDF8] uppercase">
+                                        RO + ALKALINE + TDS CONTROLLER
+                                    </div>
+
+                                    <!-- Specs List (Condensed & Perfectly Aligned) -->
+                                    <ul class="divide-y divide-white/10 text-sm px-6">
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400 font-medium">Storage Capacity</span>
+                                            <span class="font-semibold text-white text-right">10 Liter</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Production Flow</span>
+                                            <span class="font-medium text-white text-right">12 to 15 Liter/ Hr</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Purification</span>
+                                            <span class="font-medium text-white text-right">Multi Stage</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Filter Cartridge</span>
+                                            <span class="font-medium text-white text-right">Sediment</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Carbon Filter</span>
+                                            <span class="font-medium text-white text-right">Alkaline Filter</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Booster Pump</span>
+                                            <span class="font-medium text-white text-right">100 GPD Heavy Duty</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Membrane</span>
+                                            <span class="font-medium text-white text-right">80GPD Hi TDS Works</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Mounting</span>
+                                            <span class="font-medium text-white text-right">Wall Mounting/Table
+                                                Top</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Consumption</span>
+                                            <span class="font-medium text-white text-right">60W (in Use)</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Weight</span>
+                                            <span class="font-medium text-white text-right">9.800 Kg Approx</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Operating Voltage</span>
+                                            <span class="font-medium text-white text-right">230V/24v</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Input Water Pres. (mini)</span>
+                                            <span class="font-medium text-white text-right">0.3 Kg/Cm2/10.c</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Maximum Duty Cycle</span>
+                                            <span class="font-medium text-white text-right">75L/Day</span>
+                                        </li>
+
+                                        <!-- Full-width feature note at the bottom -->
+                                        <li class="py-3 text-gray-300 italic tracking-wide">
+                                            * Fully Automation Operation Low Pressure Cutoff
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Call to Action Button -->
+                                <div class="pt-2">
+                                    <a href="./contact.html">
+                                        <button
+                                            class="inline-flex px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 hover:scale-[1.02] transition-all duration-300">
+                                            Enquire Now
+                                        </button>
+                                    </a>
+                                </div>
+
                             </div>
-                            <button
-                                class="px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 transition duration-200">Enquire
-                                Now</button>
                         </div>
+
+                        <!-- Horizontal Divider between products -->
+                        <hr class="border-white/10 w-3/4 mx-auto block lg:hidden">
+
+                        <!-- ================= PRODUCT 2 ================= -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start relative">
+
+                            <!-- Product 1 Image (Sticky on Desktop) -->
+                            <div
+                                class="lg:col-span-5 sticky top-28 bg-white rounded-3xl p-8 sm:p-12 shadow-2xl flex items-center justify-center aspect-square group overflow-hidden">
+                                <img src="./images/Nixon Pro.jpeg" alt="PEQON Nixon Pro"
+                                    class="w-full h-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+
+                            <!-- Product 1 Details -->
+                            <div class="lg:col-span-7 flex flex-col space-y-6">
+
+                                <!-- Header & Price -->
+                                <div class="space-y-2">
+                                    <h3
+                                        class="font-serif text-3xl sm:text-4xl font-bold text-white uppercase border-b-2 border-[#FBC24A] pb-2 inline-block">
+                                        NIXON Pro
+                                    </h3>
+                                    <!-- Uncomment if you want to show price -->
+                                    <!-- <p class="text-xl text-[#FBC24A] font-medium pt-2">Price :- 18,500 /-</p> -->
+                                </div>
+
+                                <!-- Specs Table Container -->
+                                <div
+                                    class="bg-[#111D35]/50 border border-white/10 rounded-2xl backdrop-blur-sm overflow-hidden">
+
+                                    <!-- Top Spec Header -->
+                                    <div
+                                        class="px-6 py-3.5 bg-white/[0.02] border-b border-white/10 text-xs sm:text-sm font-bold tracking-widest text-[#38BDF8] uppercase">
+                                        RO + ALKALINE + TDS CONTROLLER
+                                    </div>
+
+                                    <!-- Specs List (Condensed & Perfectly Aligned) -->
+                                    <ul class="divide-y divide-white/10 text-sm px-6">
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400 font-medium">Storage Capacity</span>
+                                            <span class="font-semibold text-white text-right">10 Liter</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Production Flow</span>
+                                            <span class="font-medium text-white text-right">12 to 15 Liter/ Hr</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Purification</span>
+                                            <span class="font-medium text-white text-right">Multi Stage</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Filter Cartridge</span>
+                                            <span class="font-medium text-white text-right">Sediment</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Carbon Filter</span>
+                                            <span class="font-medium text-white text-right">Alkaline Filter</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Booster Pump</span>
+                                            <span class="font-medium text-white text-right">100 GPD Heavy Duty</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Membrane</span>
+                                            <span class="font-medium text-white text-right">80GPD Hi TDS Works</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Mounting</span>
+                                            <span class="font-medium text-white text-right">Wall Mounting/Table
+                                                Top</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Consumption</span>
+                                            <span class="font-medium text-white text-right">60W (in Use)</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Weight</span>
+                                            <span class="font-medium text-white text-right">9.800 Kg Approx</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Operating Voltage</span>
+                                            <span class="font-medium text-white text-right">230V/24v</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Input Water Pres. (mini)</span>
+                                            <span class="font-medium text-white text-right">0.3 Kg/Cm2/10.c</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Maximum Duty Cycle</span>
+                                            <span class="font-medium text-white text-right">75L/Day</span>
+                                        </li>
+
+                                        <!-- Full-width feature note at the bottom -->
+                                        <li class="py-3 text-gray-300 italic tracking-wide">
+                                            * Fully Automation Operation Low Pressure Cutoff
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Call to Action Button -->
+                                <div class="pt-2">
+                                    <a href="./contact.html">
+                                        <button
+                                            class="inline-flex px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 hover:scale-[1.02] transition-all duration-300">
+                                            Enquire Now
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- You can continue adding Product 3, Product 4, etc. here using the same block structure -->
+
                     </div>
                 </div>
 
                 <!-- 2. KITCHEN CHIMNEY TAB (From Reference Image) -->
+                <!-- ================= 2. KITCHEN CHIMNEY TAB (MULTIPLE PRODUCTS) ================= -->
                 <div id="tab-chimney"
                     class="tab-panel hidden absolute inset-0 transition-all duration-500 ease-in-out opacity-0 translate-y-4">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
 
-                        <!-- Product Image -->
-                        <div
-                            class="lg:col-span-5 bg-white rounded-3xl p-8 sm:p-12 shadow-2xl flex items-center justify-center aspect-square relative group overflow-hidden">
-                            <img src="./images/peqon-bliss.png" alt="PEQON Bliss Chimney"
-                                class="w-full h-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
+                    <!-- Vertical Stack Container for Multiple Products -->
+                    <div class="flex flex-col gap-16 lg:gap-24">
+
+
+                        <!-- ================= PRODUCT: BLISS CHIMNEY ================= -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start relative">
+
+                            <!-- Product Image (Sticky on Desktop) -->
+                            <div
+                                class="lg:col-span-5 sticky top-28 bg-white rounded-3xl p-8 sm:p-12 shadow-2xl flex items-center justify-center aspect-square group overflow-hidden">
+                                <img src="./images/peqon-bliss.png" alt="PEQON Bliss Chimney"
+                                    class="w-full h-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+
+                            <!-- Product Details -->
+                            <div class="lg:col-span-7 flex flex-col space-y-6">
+
+                                <!-- Header & Price -->
+                                <div class="space-y-2">
+                                    <h3
+                                        class="font-serif text-3xl sm:text-4xl font-bold text-white uppercase border-b-2 border-[#FBC24A] pb-2 inline-block">
+                                        BLISS
+                                    </h3>
+                                    <p class="text-xl text-[#FBC24A] font-medium pt-2">Price :- 35,990 /-</p>
+                                </div>
+
+                                <!-- Specs Table Container -->
+                                <div
+                                    class="bg-[#111D35]/50 border border-white/10 rounded-2xl backdrop-blur-sm overflow-hidden">
+
+                                    <!-- Specs List (Condensed & Perfectly Aligned) -->
+                                    <ul class="divide-y divide-white/10 text-sm px-6">
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4 mt-2">
+                                            <span class="text-gray-400 font-bold">Size</span>
+                                            <span class="font-bold text-white text-right">950*660*525mm</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Rate Voltage</span>
+                                            <span class="font-medium text-white text-right">220V-240V</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Rotation Method</span>
+                                            <span class="font-medium text-white text-right">Single Motor</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Power Consumption</span>
+                                            <span class="font-medium text-white text-right">180 Watt (On Full
+                                                Speed)</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Touch & Hand Sensor</span>
+                                            <span class="font-medium text-[#28B8E8] text-right">Yes</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Motor Wattage</span>
+                                            <span class="font-medium text-white text-right">160W/Motor</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">No. Of Lamp</span>
+                                            <span class="font-medium text-white text-right">2*1.5W</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Suction Power</span>
+                                            <span class="font-medium text-white text-right">1850M³/Hr</span>
+                                        </li>
+
+                                        <li
+                                            class="py-2.5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                                            <span class="text-gray-400">Colour</span>
+                                            <span class="font-medium text-white text-left sm:text-right">Black Glass
+                                                Miles Stainless Steel</span>
+                                        </li>
+
+                                        <!-- Full-width feature note at the bottom -->
+                                        <li class="py-3 text-gray-300 italic tracking-wide mb-2">
+                                            * 3rd generation Heat Clean Technology 100% Copper with Double ball Bearing
+                                            Motor
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Call to Action Button -->
+                                <div class="pt-2">
+                                    <a href="./contact.html">
+                                        <button
+                                            class="inline-flex px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 hover:scale-[1.02] transition-all duration-300">
+                                            Enquire Now
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
                         </div>
 
-                        <!-- Product Details -->
-                        <div class="lg:col-span-7 space-y-6">
-                            <div class="space-y-2">
-                                <h3
-                                    class="font-serif text-3xl sm:text-4xl font-bold text-white uppercase border-b-2 border-[#FBC24A] pb-2 inline-block">
-                                    BLISS</h3>
-                                <p class="text-xl text-[#FBC24A] font-medium pt-2">Price :- 35990 /-</p>
+                        <!-- Horizontal Divider between products (Visible mostly on mobile/tablet) -->
+                        <hr class="border-white/10 w-3/4 mx-auto block lg:hidden">
+
+                        <!-- ================= PRODUCT 2: AURA (Example Second Product) ================= -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start relative">
+
+                            <!-- Product Image (Sticky on Desktop) -->
+                            <div
+                                class="lg:col-span-5 sticky top-28 bg-white rounded-3xl p-8 sm:p-12 shadow-2xl flex items-center justify-center aspect-square group overflow-hidden">
+                                <img src="./images/DELLA.png" alt="PEQON Bliss Chimney"
+                                    class="w-full h-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
                             </div>
 
-                            <!-- Specs Table (Replicated exactly from image_214e44.png) -->
-                            <div
-                                class="bg-[#111D35]/50 border border-white/10 rounded-2xl px-6 py-2 backdrop-blur-sm overflow-hidden">
-                                <ul class="divide-y divide-white/10 text-sm sm:text-base">
-                                    <li
-                                        class="py-3.5 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-                                        <span class="text-gray-400 font-bold">Size</span><span
-                                            class="font-bold text-white">950*660*525mm</span></li>
-                                    <li
-                                        class="py-3.5 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-                                        <span class="text-gray-400">Rate Voltage</span><span
-                                            class="font-medium text-white">220V-240V</span></li>
-                                    <li
-                                        class="py-3.5 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-                                        <span class="text-gray-400">Rotation Method</span><span
-                                            class="font-medium text-white">Single Motor</span></li>
-                                    <li
-                                        class="py-3.5 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-                                        <span class="text-gray-400">Power Consumption</span><span
-                                            class="font-medium text-white">180 Watt (On Full Speed)</span></li>
-                                    <li
-                                        class="py-3.5 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-                                        <span class="text-gray-400">Touch & Hand Sensor</span><span
-                                            class="font-medium text-[#28B8E8]">Yes</span></li>
-                                    <li
-                                        class="py-3.5 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-                                        <span class="text-gray-400">Motor Wattage</span><span
-                                            class="font-medium text-white">160W/Motor</span></li>
-                                    <li
-                                        class="py-3.5 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-                                        <span class="text-gray-400">No. Of Lamp</span><span
-                                            class="font-medium text-white">2*1.5W</span></li>
-                                    <li
-                                        class="py-3.5 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-                                        <span class="text-gray-400">Suction Power</span><span
-                                            class="font-medium text-white">1850M³/Hr</span></li>
-                                    <li
-                                        class="py-3.5 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-                                        <span class="text-gray-400">Colour</span><span
-                                            class="font-medium text-white text-left sm:text-right">Black Glass Miles
-                                            Stainless Steel</span></li>
-                                    <li class="py-3.5 text-gray-300 leading-relaxed">
-                                        3rd generation Heat Clean Technology 100% Copper with Double ball Bearing Motor
-                                    </li>
-                                </ul>
+                            <!-- Product Details -->
+                            <div class="lg:col-span-7 flex flex-col space-y-6">
+
+                                <!-- Header & Price -->
+                                <div class="space-y-2">
+                                    <h3
+                                        class="font-serif text-3xl sm:text-4xl font-bold text-white uppercase border-b-2 border-[#FBC24A] pb-2 inline-block">
+                                        Della
+                                    </h3>
+                                    <p class="text-xl text-[#FBC24A] font-medium pt-2">Price :- 19,990 /-</p>
+                                </div>
+
+                                <!-- Specs Table Container -->
+                                <!-- Specs Table Container -->
+                                <div
+                                    class="bg-[#111D35]/50 border border-white/10 rounded-2xl backdrop-blur-sm overflow-hidden">
+
+                                    <!-- Specs List (Condensed & Perfectly Aligned) -->
+                                    <ul class="divide-y divide-white/10 text-sm px-6">
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4 mt-2">
+                                            <span class="text-gray-400 font-bold">Size</span>
+                                            <span class="font-bold text-white text-right">81*24*60cm</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Rate Voltage</span>
+                                            <span class="font-medium text-white text-right">220V Ac- 50Hz</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Rotation Method</span>
+                                            <span class="font-medium text-white text-right">Single Motor</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Power Consumption</span>
+                                            <span class="font-medium text-white text-right">300 Watt</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Motor Wattage</span>
+                                            <span class="font-medium text-white text-right">2*3W</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Suction Power</span>
+                                            <span class="font-medium text-white text-right">1150M³/Hr</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Colour</span>
+                                            <span class="font-medium text-white text-right">Black</span>
+                                        </li>
+
+                                        <li
+                                            class="py-2.5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4 mb-2">
+                                            <span class="text-gray-400">Function</span>
+                                            <span class="font-medium text-white text-left sm:text-right">Heating Auto
+                                                Clean G.W/N.W: 15kgs/13kgs</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <!-- Call to Action Button -->
+                                <div class="pt-2">
+                                    <a href="./contact.html">
+                                        <button
+                                            class="inline-flex px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 hover:scale-[1.02] transition-all duration-300">
+                                            Enquire Now
+                                        </button>
+                                    </a>
+                                </div>
+
                             </div>
-                            <button
-                                class="px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 transition duration-200">Enquire
-                                Now</button>
+                        </div>
+
+                        <!-- ================= PRODUCT 3: AURA (Example Second Product) ================= -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start relative">
+
+                            <!-- Product Image (Sticky on Desktop) -->
+                            <div
+                                class="lg:col-span-5 sticky top-28 bg-white rounded-3xl p-8 sm:p-12 shadow-2xl flex items-center justify-center aspect-square group overflow-hidden">
+                                <img src="./images/BLISS BLDC.jpg" alt="PEQON Bliss Chimney"
+                                    class="w-full h-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+
+                            <!-- Product Details -->
+                            <div class="lg:col-span-7 flex flex-col space-y-6">
+
+                                <!-- Header & Price -->
+                                <div class="space-y-2">
+                                    <h3
+                                        class="font-serif text-3xl sm:text-4xl font-bold text-white uppercase border-b-2 border-[#FBC24A] pb-2 inline-block">
+                                        Bliss bldc
+                                    </h3>
+                                    <!-- <p class="text-xl text-[#FBC24A] font-medium pt-2">Price :- 19,990 /-</p> -->
+                                </div>
+
+                                <!-- Specs Table Container -->
+                                <div
+                                    class="bg-[#111D35]/50 border border-white/10 rounded-2xl backdrop-blur-sm overflow-hidden">
+
+                                    <!-- Top Spec Header -->
+                                    <div class="px-6 py-4 bg-white/[0.02] border-b border-white/10 flex flex-col">
+                                        <span class="text-sm font-bold tracking-widest text-white uppercase">Save
+                                            Energy. Cook Better.</span>
+                                        <span
+                                            class="text-xs font-semibold tracking-widest text-[#38BDF8] uppercase mt-1">Experience
+                                            Next-Gen BLDC Technology</span>
+                                    </div>
+
+                                    <!-- Specs List (Condensed & Perfectly Aligned) -->
+                                    <ul class="divide-y divide-white/10 text-sm px-6">
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4 mt-2">
+                                            <span class="text-gray-400 font-bold">Model No.</span>
+                                            <span class="font-bold text-white text-right">V02</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Model Name</span>
+                                            <span class="font-medium text-white text-right">BLISS BLDC</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Maximum Suction (m³/hr)</span>
+                                            <span class="font-medium text-white text-right">1800 m³/hr</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Noise Level</span>
+                                            <span class="font-medium text-white text-right">&lt;56dba</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Rated Input</span>
+                                            <span class="font-medium text-white text-right">220-230V 50Hz</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Heating Power</span>
+                                            <span class="font-medium text-white text-right">60W</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Lighting Power</span>
+                                            <span class="font-medium text-white text-right">3W</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Motor Power</span>
+                                            <span class="font-medium text-white text-right">150W</span>
+                                        </li>
+
+                                        <!-- Longer text items switch to stack on small mobile screens -->
+                                        <li
+                                            class="py-2.5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                                            <span class="text-gray-400">Controls</span>
+                                            <span class="font-medium text-white text-left sm:text-right">9 Speed Motion
+                                                Sensor with Touch Control</span>
+                                        </li>
+
+                                        <li
+                                            class="py-2.5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4 mb-2">
+                                            <span class="text-gray-400">Technology</span>
+                                            <span class="font-medium text-white text-left sm:text-right">Dry Heat Auto
+                                                Clean Technology</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <!-- Call to Action Button -->
+                                <div class="pt-2">
+                                    <a href="./contact.html">
+                                        <button
+                                            class="inline-flex px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 hover:scale-[1.02] transition-all duration-300">
+                                            Enquire Now
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- ================= PRODUCT 4: AURA (Example Second Product) ================= -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start relative">
+
+                            <!-- Product Image (Sticky on Desktop) -->
+                            <div
+                                class="lg:col-span-5 sticky top-28 bg-white rounded-3xl p-8 sm:p-12 shadow-2xl flex items-center justify-center aspect-square group overflow-hidden">
+                                <img src="./images/MAVIS.jpg" alt="PEQON Bliss Chimney"
+                                    class="w-full h-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+
+                            <!-- Product Details -->
+                            <div class="lg:col-span-7 flex flex-col space-y-6">
+
+                                <!-- Header & Price -->
+                                <div class="space-y-2">
+                                    <h3
+                                        class="font-serif text-3xl sm:text-4xl font-bold text-white uppercase border-b-2 border-[#FBC24A] pb-2 inline-block">
+                                        MAVIS
+                                    </h3>
+                                    <!-- <p class="text-xl text-[#FBC24A] font-medium pt-2">Price :- 19,990 /-</p> -->
+                                </div>
+
+                                <!-- Specs Table Container -->
+                                <!-- Specs Table Container -->
+                                <div
+                                    class="bg-[#111D35]/50 border border-white/10 rounded-2xl backdrop-blur-sm overflow-hidden">
+
+                                    <!-- Top Spec Header -->
+                                    <div class="px-6 py-4 bg-white/[0.02] border-b border-white/10 flex flex-col">
+                                        <span class="text-sm font-bold tracking-widest text-white uppercase">Silence,
+                                            Style &amp; Superior Performance.</span>
+                                        <span
+                                            class="text-xs font-semibold tracking-widest text-[#38BDF8] uppercase mt-1">Model
+                                            Specifications</span>
+                                    </div>
+
+                                    <!-- Specs List (Condensed & Perfectly Aligned) -->
+                                    <ul class="divide-y divide-white/10 text-sm px-6">
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4 mt-2">
+                                            <span class="text-gray-400 font-bold">Model No.</span>
+                                            <span class="font-bold text-white text-right">V01</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Model Name</span>
+                                            <span class="font-medium text-white text-right">MAVIS</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Maximum Suction (m³/hr)</span>
+                                            <span class="font-medium text-white text-right">1600 m³/hr</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Noise Level</span>
+                                            <span class="font-medium text-white text-right">&lt;56dba</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Rated Input</span>
+                                            <span class="font-medium text-white text-right">220-230V 50Hz</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Heating Power</span>
+                                            <span class="font-medium text-white text-right">60W</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Lighting Power</span>
+                                            <span class="font-medium text-white text-right">2X1.5W</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Motor Power</span>
+                                            <span class="font-medium text-white text-right">180W</span>
+                                        </li>
+
+                                        <!-- Longer text items switch to stack on small mobile screens -->
+                                        <li
+                                            class="py-2.5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                                            <span class="text-gray-400">Controls</span>
+                                            <span class="font-medium text-white text-left sm:text-right">3 Speed Motion
+                                                Sensor with Touch Control</span>
+                                        </li>
+
+                                        <li
+                                            class="py-2.5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4 mb-2">
+                                            <span class="text-gray-400">Technology</span>
+                                            <span class="font-medium text-white text-left sm:text-right">Dry Heat Auto
+                                                Clean Technology</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <!-- Call to Action Button -->
+                                <div class="pt-2">
+                                    <a href="./contact.html">
+                                        <button
+                                            class="inline-flex px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 hover:scale-[1.02] transition-all duration-300">
+                                            Enquire Now
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- ================= PRODUCT 5: AURA (Example Second Product) ================= -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start relative">
+
+                            <!-- Product Image (Sticky on Desktop) -->
+                            <div
+                                class="lg:col-span-5 sticky top-28 bg-white rounded-3xl p-8 sm:p-12 shadow-2xl flex items-center justify-center aspect-square group overflow-hidden">
+                                <img src="./images/MABEL.jpg" alt="PEQON Bliss Chimney"
+                                    class="w-full h-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+
+                            <!-- Product Details -->
+                            <div class="lg:col-span-7 flex flex-col space-y-6">
+
+                                <!-- Header & Price -->
+                                <div class="space-y-2">
+                                    <h3
+                                        class="font-serif text-3xl sm:text-4xl font-bold text-white uppercase border-b-2 border-[#FBC24A] pb-2 inline-block">
+                                        MAVIS
+                                    </h3>
+                                    <!-- <p class="text-xl text-[#FBC24A] font-medium pt-2">Price :- 19,990 /-</p> -->
+                                </div>
+
+                                <!-- Specs Table Container -->
+                                <!-- Specs Table Container -->
+                                <div
+                                    class="bg-[#111D35]/50 border border-white/10 rounded-2xl backdrop-blur-sm overflow-hidden">
+
+                                    <!-- Top Spec Header -->
+                                    <div class="px-6 py-4 bg-white/[0.02] border-b border-white/10 flex flex-col">
+                                        <span class="text-sm font-bold tracking-widest text-white uppercase">Designed to
+                                            Impress. Built to Perform.</span>
+                                        <span
+                                            class="text-xs font-semibold tracking-widest text-[#38BDF8] uppercase mt-1">Model
+                                            Specifications</span>
+                                    </div>
+
+                                    <!-- Specs List (Condensed & Perfectly Aligned) -->
+                                    <ul class="divide-y divide-white/10 text-sm px-6">
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4 mt-2">
+                                            <span class="text-gray-400 font-bold">Model No.</span>
+                                            <span class="font-bold text-white text-right">V03</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Model Name</span>
+                                            <span class="font-medium text-white text-right">MABEL</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Maximum Suction (m³/hr)</span>
+                                            <span class="font-medium text-white text-right">1400 m³/hr</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Noise Level</span>
+                                            <span class="font-medium text-white text-right">&lt;56dba</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Rated Input</span>
+                                            <span class="font-medium text-white text-right">220-230V 50Hz</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Heating Power</span>
+                                            <span class="font-medium text-white text-right">60W</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Lighting Power</span>
+                                            <span class="font-medium text-white text-right">2X1.5W</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Motor Power</span>
+                                            <span class="font-medium text-white text-right">180W</span>
+                                        </li>
+
+                                        <!-- Longer text items switch to stack on small mobile screens -->
+                                        <li
+                                            class="py-2.5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                                            <span class="text-gray-400">Controls</span>
+                                            <span class="font-medium text-white text-left sm:text-right">3 Speed Motion
+                                                Sensor with Touch Control</span>
+                                        </li>
+
+                                        <li
+                                            class="py-2.5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4 mb-2">
+                                            <span class="text-gray-400">Technology</span>
+                                            <span class="font-medium text-white text-left sm:text-right">Dry Heat Auto
+                                                Clean Technology</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <!-- Call to Action Button -->
+                                <div class="pt-2">
+                                    <a href="./contact.html">
+                                        <button
+                                            class="inline-flex px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 hover:scale-[1.02] transition-all duration-300">
+                                            Enquire Now
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- ================= PRODUCT 6: AURA (Example Second Product) ================= -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start relative">
+
+                            <!-- Product Image (Sticky on Desktop) -->
+                            <div
+                                class="lg:col-span-5 sticky top-28 bg-white rounded-3xl p-8 sm:p-12 shadow-2xl flex items-center justify-center aspect-square group overflow-hidden">
+                                <img src="./images/MABEL.jpg" alt="PEQON Bliss Chimney"
+                                    class="w-full h-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+
+                            <!-- Product Details -->
+                            <div class="lg:col-span-7 flex flex-col space-y-6">
+
+                                <!-- Header & Price -->
+                                <div class="space-y-2">
+                                    <h3
+                                        class="font-serif text-3xl sm:text-4xl font-bold text-white uppercase border-b-2 border-[#FBC24A] pb-2 inline-block">
+                                        MARVELA
+                                    </h3>
+                                    <!-- <p class="text-xl text-[#FBC24A] font-medium pt-2">Price :- 19,990 /-</p> -->
+                                </div>
+
+                                <!-- Specs Table Container -->
+                                <div
+                                    class="bg-[#111D35]/50 border border-white/10 rounded-2xl backdrop-blur-sm overflow-hidden">
+
+                                    <!-- Top Spec Header -->
+                                    <div class="px-6 py-4 bg-white/[0.02] border-b border-white/10 flex flex-col">
+                                        <span class="text-sm font-bold tracking-widest text-white uppercase">Sleek
+                                            Design and Powerful Performance.</span>
+                                        <span
+                                            class="text-xs font-semibold tracking-widest text-[#38BDF8] uppercase mt-1">Model
+                                            Specifications</span>
+                                    </div>
+
+                                    <!-- Specs List (Condensed & Perfectly Aligned) -->
+                                    <ul class="divide-y divide-white/10 text-sm px-6">
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4 mt-2">
+                                            <span class="text-gray-400 font-bold">Model No.</span>
+                                            <span class="font-bold text-white text-right">V04</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Model Name</span>
+                                            <span class="font-medium text-white text-right">MARVELA</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Maximum Suction (m³/hr)</span>
+                                            <span class="font-medium text-white text-right">1200 m³/hr</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Noise Level</span>
+                                            <span class="font-medium text-white text-right">&lt;56dba</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Rated Input</span>
+                                            <span class="font-medium text-white text-right">220-230V 50Hz</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Heating Power</span>
+                                            <span class="font-medium text-white text-right">60W</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Lighting Power</span>
+                                            <span class="font-medium text-white text-right">2X1.5W</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Motor Power</span>
+                                            <span class="font-medium text-white text-right">180W</span>
+                                        </li>
+
+                                        <!-- Longer text items switch to stack on small mobile screens -->
+                                        <li
+                                            class="py-2.5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                                            <span class="text-gray-400">Controls</span>
+                                            <span class="font-medium text-white text-left sm:text-right">3 Speed Push
+                                                Button Control</span>
+                                        </li>
+
+                                        <li
+                                            class="py-2.5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4 mb-2">
+                                            <span class="text-gray-400">Technology</span>
+                                            <span class="font-medium text-white text-left sm:text-right">Dry Heat Auto
+                                                Clean Technology</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <!-- Call to Action Button -->
+                                <div class="pt-2">
+                                    <a href="./contact.html">
+                                        <button
+                                            class="inline-flex px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 hover:scale-[1.02] transition-all duration-300">
+                                            Enquire Now
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>
                 </div>
 
-                <!-- 3. RO WATER TAB (Dummy Data) -->
+                <!-- ================= 3. RO WATER TAB (MULTIPLE PRODUCTS) ================= -->
                 <div id="tab-ro-water"
                     class="tab-panel hidden absolute inset-0 transition-all duration-500 ease-in-out opacity-0 translate-y-4">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-                        <!-- Product Image -->
-                        <div
-                            class="lg:col-span-5 bg-white rounded-3xl p-8 sm:p-12 shadow-2xl flex items-center justify-center aspect-square relative group overflow-hidden">
-                            <img src="./images/pqon13.jpeg" alt="PEQON Nixon Pro"
-                                class="w-full h-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
-                        </div>
-                        <!-- Product Details -->
-                        <div class="lg:col-span-7 space-y-6">
-                            <div class="space-y-2">
-                                <h3 class="font-serif text-3xl sm:text-4xl font-bold text-white">NIXON PRO</h3>
-                                <p class="text-xl text-[#FBC24A] font-medium">Price :- 14,990 /-</p>
+
+                    <!-- Vertical Stack Container for Multiple Products -->
+                    <div class="flex flex-col gap-16 lg:gap-24">
+
+                        <!-- ================= PRODUCT 1: NIXON PRO ================= -->
+                        <!-- ================= PRODUCT 6: AURA (Example Second Product) ================= -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start relative">
+
+                            <!-- Product Image (Sticky on Desktop) -->
+                            <div
+                                class="lg:col-span-5 sticky top-28 bg-white rounded-3xl p-8 sm:p-12 shadow-2xl flex items-center justify-center aspect-square group overflow-hidden">
+                                <img src="./images/Ro-1.jpeg" alt="PEQON Bliss Chimney"
+                                    class="w-full h-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
                             </div>
 
-                            <!-- Specs Table -->
-                            <div class="bg-[#111D35]/50 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
-                                <ul class="divide-y divide-white/10 text-sm sm:text-base">
-                                    <li class="py-3 flex justify-between"><span class="text-gray-400">System</span><span
-                                            class="font-medium text-white">Commercial Grade RO</span></li>
-                                    <li class="py-3 flex justify-between"><span class="text-gray-400">Flow
-                                            Rate</span><span class="font-medium text-white">50 Liters / Hr</span></li>
-                                    <li class="py-3 flex justify-between"><span class="text-gray-400">Ideal
-                                            For</span><span class="font-medium text-white">Offices, Restaurants</span>
-                                    </li>
-                                    <li class="py-3 flex justify-between"><span
-                                            class="text-gray-400">Material</span><span
-                                            class="font-medium text-white">Food Grade Plastic</span></li>
-                                    <li class="py-3"><span class="text-gray-400 block mb-1">Key Features</span><span
-                                            class="font-medium text-white">Auto-Flushing, High Duty Cycle Pump, Dual
-                                            Filtration</span></li>
-                                </ul>
+                            <!-- Product Details -->
+                            <div class="lg:col-span-7 flex flex-col space-y-6">
+
+                                <!-- Header & Price -->
+                                <div class="space-y-2">
+                                    <h3
+                                        class="font-serif text-3xl sm:text-4xl font-bold text-white uppercase border-b-2 border-[#FBC24A] pb-2 inline-block">
+                                        RO-Water
+                                    </h3>
+                                    <!-- <p class="text-xl text-[#FBC24A] font-medium pt-2">Price :- 19,990 /-</p> -->
+                                </div>
+
+                                <!-- Specs Table Container -->
+                                <!-- Specs Table Container -->
+                                <div
+                                    class="bg-[#111D35]/50 border border-white/10 rounded-2xl backdrop-blur-sm overflow-hidden">
+
+                                    <!-- Top Spec Header -->
+                                    <div class="px-6 py-4 bg-white/[0.02] border-b border-white/10 flex flex-col">
+                                        <span class="text-sm font-bold tracking-widest text-white uppercase">Pure Water.
+                                            Healthier Living.</span>
+                                        <span
+                                            class="text-xs font-semibold tracking-widest text-[#38BDF8] uppercase mt-1">RO
+                                            System Specifications</span>
+                                    </div>
+
+                                    <!-- Specs List (Condensed & Perfectly Aligned) -->
+                                    <ul class="divide-y divide-white/10 text-sm px-6">
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4 mt-2">
+                                            <span class="text-gray-400 font-bold">Storage Capacity</span>
+                                            <span class="font-bold text-white text-right">10 Liter</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Production Flow</span>
+                                            <span class="font-medium text-white text-right">12 to 15 Liter/ Hr</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Purification</span>
+                                            <span class="font-medium text-white text-right">Multi Stage</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Filter Cartridge</span>
+                                            <span class="font-medium text-white text-right">Sediment</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Carbon Filter</span>
+                                            <span class="font-medium text-white text-right">Alkaline Filter</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Booster Pump</span>
+                                            <span class="font-medium text-white text-right">100 GPD Heavy Duty</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Membrane</span>
+                                            <span class="font-medium text-white text-right">80GPD Hi TDS Works</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Mounting</span>
+                                            <span class="font-medium text-white text-right">Wall Mounting/Table
+                                                Top</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Consumption</span>
+                                            <span class="font-medium text-white text-right">60W (in Use)</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Weight</span>
+                                            <span class="font-medium text-white text-right">9.800 Kg Approx</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Operating Voltage</span>
+                                            <span class="font-medium text-white text-right">230V/24v</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Input Water Pres. (mini)</span>
+                                            <span class="font-medium text-white text-right">0.3 Kg/Cm2/10.c</span>
+                                        </li>
+
+                                        <li class="py-2.5 flex justify-between items-center gap-4">
+                                            <span class="text-gray-400">Maximum Duty Cycle</span>
+                                            <span class="font-medium text-white text-right">75L/Day</span>
+                                        </li>
+
+                                        <!-- Full-width feature note at the bottom -->
+                                        <li class="py-3 text-gray-300 italic tracking-wide mb-2">
+                                            * Fully Automation Operation Low Pressure Cutoff
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <!-- Call to Action Button -->
+                                <div class="pt-2">
+                                    <a href="./contact.html">
+                                        <button
+                                            class="inline-flex px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 hover:scale-[1.02] transition-all duration-300">
+                                            Enquire Now
+                                        </button>
+                                    </a>
+                                </div>
+
                             </div>
-                            <button
-                                class="px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBC24A] to-[#F3A833] text-[#0A1325] font-semibold text-sm sm:text-base shadow-glow-gold hover:brightness-110 transition duration-200">Enquire
-                                Now</button>
                         </div>
+                        <!-- Horizontal Divider between products (Visible mostly on mobile/tablet) -->
+                        <hr class="border-white/10 w-3/4 mx-auto block lg:hidden">
+
+
                     </div>
                 </div>
 
