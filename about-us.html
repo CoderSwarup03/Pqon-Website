@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEQON - Pure Water. Smarter Living.</title>
+
+    <!-- Google Fonts: Fraunces & Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .fraunces {
+            font-family: "Fraunces", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "SOFT" 0,
+                "WONK" 0;
+        }
+
+        .manrope {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                        serif: ['Fraunces', 'serif'],
+                    },
+                    colors: {
+                        navy: {
+                            950: '#060B14',
+                            900: '#0A1325',
+                            800: '#111D35',
+                            700: '#182744',
+                        },
+                        gold: {
+                            400: '#FBC24A',
+                            500: '#F3A833',
+                        },
+                        cyanAccent: '#28B8E8',
+                    },
+                    boxShadow: {
+                        'glow-gold': '0 0 35px -5px rgba(251, 194, 74, 0.45)',
+                        'glass-dark': '0 25px 50px -12px rgba(0, 0, 0, 0.65)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#0A1325] sm:bg-[#060B14] text-white font-sans min-h-screen relative overflow-x-hidden">
+
+    <!-- ================= HEADER SECTION ================= -->
+    <div data-include="include/header.html"></div>
+    <!-- ================= ABOUT US HERO BANNER ================= -->
+    <section
+        class="relative w-full h-[40vh] min-h-[300px] lg:min-h-[400px] flex items-center overflow-hidden bg-[#081022]">
+
+        <!-- 1. Background Image -->
+        <img src="./images/pqon9.jpeg" alt="PEQON About Us"
+            class="absolute inset-0 w-full h-full object-cover z-0 opacity-60 transform scale-105" />
+
+        <!-- 2. Gradient Overlays (For Text Readability & Theme Blending) -->
+        <!-- Dark fade from the left -->
+        <div
+            class="absolute inset-0 z-10 bg-gradient-to-r from-[#081022] via-[#081022]/70 to-transparent pointer-events-none">
+        </div>
+        <!-- Dark fade at the bottom to blend into the next section -->
+        <div
+            class="absolute inset-0 z-10 bg-gradient-to-b from-[#081022]/30 via-transparent to-[#081022] pointer-events-none">
+        </div>
+
+        <!-- 3. Content Container (Breadcrumbs & Title) -->
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+
+            <!-- Path Details / Breadcrumbs -->
+            <nav class="flex items-center gap-2.5 text-sm font-medium mb-4 sm:mb-6" aria-label="Breadcrumb">
+                <a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-200">
+                    Home
+                </a>
+
+                <!-- Separator Arrow -->
+                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+
+                <!-- Current Page -->
+                <span class="text-[#38BDF8]" aria-current="page">
+                    About Us
+                </span>
+            </nav>
+
+            <!-- Page Title -->
+            <h1
+                class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight leading-[1.12] text-white drop-shadow-md">
+                Our <span class="italic text-[#38BDF8]">Story</span>
+            </h1>
+
+            <!-- Optional Subtitle -->
+            <p class="mt-4 text-gray-300 text-base sm:text-lg max-w-xl font-normal leading-relaxed drop-shadow-sm">
+                Discover the passion, engineering, and commitment behind every drop of water and breath of air we
+                purify.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT & WHY CHOOSE PEQON SECTION ================= -->
+    <section id="company-profile" class="relative py-16 lg:py-10 bg-[#081022] text-white overflow-hidden">
+
+        <!-- Ambient Background Glows -->
+        <div
+            class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[#28B8E8]/5 rounded-full blur-3xl pointer-events-none -z-10">
+        </div>
+        <div
+            class="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-[#FBC24A]/5 rounded-full blur-3xl pointer-events-none -z-10">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- ================= 1. COMPANY PROFILE (Structured Text Layout) ================= -->
+            <div class="max-w-7xl mx-auto mb-20 sm:mb-28">
+
+                <!-- Section Pill -->
+                <div
+                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/10 backdrop-blur-md mb-6">
+                    <span class="text-xs font-semibold tracking-widest uppercase text-[#38BDF8]">
+                        COMPANY PROFILE
+                    </span>
+                </div>
+
+                <!-- Heading -->
+                <h2 class="font-serif text-4xl sm:text-5xl font-normal tracking-tight leading-tight mb-8">
+                    Engineering a better <br class="hidden sm:block" />
+                    <span class="italic text-[#38BDF8]">quality of life.</span>
+                </h2>
+
+                <!-- Structured Content (Inspired by second screenshot layout) -->
+                <div class="space-y-8 text-gray-300 text-base sm:text-lg font-light leading-relaxed">
+                    <p>
+                        PEQON is an ISO 9001:2015 certified company dedicated to transforming modern households through
+                        cutting-edge water purification and kitchen ventilation systems. We believe that the appliances
+                        safeguarding your family's health should be built with uncompromising precision and designed to
+                        complement premium spaces.
+                    </p>
+
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-bold text-white font-serif">In-House Manufacturing:</h3>
+                        <p class="text-gray-400">
+                            Unlike traditional assemblers, our products are engineered from the ground up in our
+                            state-of-the-art facilities. This allows us to maintain strict quality control over every
+                            component—from aerospace-grade RO membranes to whisper-quiet chimney motors.
+                        </p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-bold text-white font-serif">Nationwide Network:</h3>
+                        <p class="text-gray-400">
+                            With a footprint spanning over 480+ cities across India, we have built a robust
+                            infrastructure designed not just for sales, but for reliable, on-time doorstep service and
+                            genuine part replacement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ================= 2. WHY CHOOSE PEQON (Mission, Vision, Values) ================= -->
+
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight uppercase">
+                    WHY CHOOSE <span class="text-[#FBC24A] font-serif font-bold">PEQON</span>
+                </h2>
+                <!-- Gold Underline Accent -->
+                <div class="w-24 h-1 bg-gradient-to-r from-[#FBC24A] to-[#F3A833] mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <!-- 3-Column Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+
+                <!-- CARD 1: Our Mission -->
+                <div
+                    class="group relative rounded-3xl bg-[#0E1A30]/80 border border-white/10 p-8 sm:p-10 transition-all duration-300 hover:bg-[#11203A] hover:-translate-y-2 hover:border-[#FBC24A]/40 hover:shadow-[0_10px_40px_rgba(251,194,74,0.1)]">
+                    <!-- Gold Trophy Icon -->
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-[#FBC24A]/10 flex items-center justify-center text-[#FBC24A] mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M19 2H5C3.346 2 2 3.346 2 5v2.831c0 2.146 1.408 4.025 3.468 4.634C6.113 14.52 7.915 16 10 16v4H7v2h10v-2h-3v-4c2.085 0 3.887-1.48 4.532-3.535C20.592 11.856 22 9.977 22 7.831V5c0-1.654-1.346-3-3-3zM4 7.831V5c0-.551.449-1 1-1h1v6.236C4.846 9.539 4 8.761 4 7.831zm16 0c0 .93-.846 1.708-2 2.405V4h1c.551 0 1 .449 1 1v2.831z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-4">Our Mission</h3>
+                    <p
+                        class="text-sm sm:text-base text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                        To bring superlative design, innovation and unbeatable quality into the lives of every consumer,
+                        for a better quality of life.
+                    </p>
+                </div>
+
+                <!-- CARD 2: Our Vision -->
+                <div
+                    class="group relative rounded-3xl bg-[#0E1A30]/80 border border-white/10 p-8 sm:p-10 transition-all duration-300 hover:bg-[#11203A] hover:-translate-y-2 hover:border-[#FBC24A]/40 hover:shadow-[0_10px_40px_rgba(251,194,74,0.1)]">
+                    <!-- Gold Leaf/Growth Icon -->
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-[#FBC24A]/10 flex items-center justify-center text-[#FBC24A] mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M21.928 11.607c-.202-.488-.635-.605-.928-.607-.006 0-3.957.016-6.494 2.535-1.503 1.493-2.316 3.42-2.5 4.887C11.82 17.067 11.002 15 9.507 13.513 6.969 10.993 3.013 10.978 3.007 10.978c-.294.002-.727.118-.928.607-.202.488-.041.974.191 1.259 0 0 1.93 2.378 4.095 3.398-1.526 2.05-2.062 4.417-2.128 4.773a.999.999 0 001.077 1.173c.356-.066 2.73-.594 4.789-2.115 1.026 2.16 3.415 4.079 3.415 4.079.285.231.77.391 1.258.19.489-.203.606-.635.608-.929.006-3.957-.016-6.495-2.536-6.505zm-15.684-1.22c3.08-1.396 6.37-1.129 8.016-.838-.179-1.92-.816-4.996-3.415-7.581-2.518-2.502-6.471-2.518-6.477-2.518-.293-.002-.727.118-.928.607-.202.488-.041.974.191 1.259 0 0 1.93 2.378 4.095 3.398-1.488 2.001-2.007 4.269-2.083 4.629l.601 1.044z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-4">Our Vision</h3>
+                    <p
+                        class="text-sm sm:text-base text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                        To be a nationally trusted name in modern kitchen and water solutions, known for reliability,
+                        technology and value.
+                    </p>
+                </div>
+
+                <!-- CARD 3: Our Values -->
+                <div
+                    class="group relative rounded-3xl bg-[#0E1A30]/80 border border-white/10 p-8 sm:p-10 transition-all duration-300 hover:bg-[#11203A] hover:-translate-y-2 hover:border-[#FBC24A]/40 hover:shadow-[0_10px_40px_rgba(251,194,74,0.1)]">
+                    <!-- Gold Medal/Diamond Icon -->
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-[#FBC24A]/10 flex items-center justify-center text-[#FBC24A] mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M21.842 6.218a2 2 0 00-.455-1.042L18.423 1.5A2 2 0 0016.92 1H7.08a2 2 0 00-1.503.5l-2.964 3.676a2 2 0 00-.455 1.042l-.128.768a2 2 0 00.569 1.63l8.692 8.692a1.996 1.996 0 002.828 0l8.692-8.692a2 2 0 00.569-1.63l-.128-.768zM12 15.172L4.828 8h14.344L12 15.172zM6.452 3h11.096l1.613 2H4.839l1.613-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-4">Our Values</h3>
+                    <p
+                        class="text-sm sm:text-base text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                        Quality control, customer commitment and honest craftsmanship guide everything we design and
+                        deliver.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= DYNAMIC FOOTER INJECTION ================= -->
+    <div data-include="include/footer.html"></div>
+
+    <!-- ================= GLOBAL SCRIPT: CUSTOM BUTTERY-SMOOTH SCROLL + MOBILE MENU ================= -->
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            // --- Step 1: Load HTML Partials (Header & Footer) ---
+            const includes = document.querySelectorAll("[data-include]");
+
+            for (const el of includes) {
+                const filePath = el.getAttribute("data-include");
+                try {
+                    const response = await fetch(filePath);
+                    if (!response.ok) {
+                        throw new Error(`Failed to load ${filePath}: ${response.statusText}`);
+                    }
+                    const htmlContent = await response.text();
+                    el.innerHTML = htmlContent;
+                } catch (error) {
+                    console.error("Error loading include:", error);
+                    el.innerHTML = `<p class="text-red-400 text-xs py-2">Failed to load ${filePath}</p>`;
+                }
+            }
+
+            // --- Step 2: Show/Hide Back-to-Top Button on Page Scroll ---
+            window.addEventListener("scroll", () => {
+                const backToTopBtn = document.getElementById("back-to-top");
+                if (!backToTopBtn) return;
+
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.remove("opacity-0", "pointer-events-none");
+                    backToTopBtn.classList.add("opacity-100");
+                } else {
+                    backToTopBtn.classList.remove("opacity-100");
+                    backToTopBtn.classList.add("opacity-0", "pointer-events-none");
+                }
+            });
+        });
+
+        /**
+         * Custom Smooth Scroll to Top
+         * @param {number} duration - Total animation time in milliseconds (900ms = smooth luxury feel)
+         */
+        function customSmoothScrollToTop(duration = 900) {
+            const startPosition = window.scrollY || document.documentElement.scrollTop;
+            if (startPosition === 0) return;
+
+            const startTime = performance.now();
+
+            // Smooth Cubic Easing: Starts gentle, moves consistently, cushions gracefully at the top
+            const easeInOutCubic = (t) =>
+                t < 0.5
+                    ? 4 * t * t * t
+                    : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+            function scrollAnimation(currentTime) {
+                const timeElapsed = currentTime - startTime;
+                const progress = Math.min(timeElapsed / duration, 1);
+                const easeProgress = easeInOutCubic(progress);
+
+                window.scrollTo(0, startPosition * (1 - easeProgress));
+
+                if (progress < 1) {
+                    requestAnimationFrame(scrollAnimation);
+                }
+            }
+
+            requestAnimationFrame(scrollAnimation);
+        }
+
+        // --- Step 3: Event Delegation for UI Click Actions ---
+        document.addEventListener("click", (e) => {
+            // 1. CUSTOM BUTTERY-SMOOTH BACK-TO-TOP HANDLER
+            const backToTopBtn = e.target.closest("#back-to-top");
+            if (backToTopBtn) {
+                e.preventDefault();
+                customSmoothScrollToTop(900); // 900ms duration for a luxurious smooth scroll
+                return;
+            }
+
+            // 2. MOBILE MENU DRAWER HANDLER
+            const openBtn = e.target.closest("#open-mobile-menu");
+            const closeBtn = e.target.closest("#close-mobile-menu");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            if (!mobileMenu) return;
+
+            // OPEN: Slide drawer down from top
+            if (openBtn) {
+                mobileMenu.classList.remove("-translate-y-full");
+                mobileMenu.classList.add("translate-y-0");
+                document.body.style.overflow = "hidden";
+                document.documentElement.style.overflow = "hidden";
+                return;
+            }
+
+            // CLOSE: Slide drawer back up
+            const clickedMenuLink = e.target.closest("#mobile-menu nav a, #mobile-menu div a");
+            if (closeBtn || clickedMenuLink) {
+                mobileMenu.classList.remove("translate-y-0");
+                mobileMenu.classList.add("-translate-y-full");
+                document.body.style.overflow = "";
+                document.documentElement.style.overflow = "";
+            }
+        });
+    </script>
+
+
+    <!-- ================= AUTO-SLIDER CAROUSEL SCRIPT ================= -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slides = document.querySelectorAll(".testimonial-slide");
+            const dots = document.querySelectorAll(".testimonial-dot");
+            let currentSlide = 0;
+            let slideInterval;
+
+            if (!slides.length || !dots.length) return;
+
+            const showSlide = (index) => {
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        // Show active slide
+                        slide.classList.remove("opacity-0", "scale-95", "pointer-events-none");
+                        slide.classList.add("opacity-100", "scale-100");
+                    } else {
+                        // Hide inactive slides
+                        slide.classList.remove("opacity-100", "scale-100");
+                        slide.classList.add("opacity-0", "scale-95", "pointer-events-none");
+                    }
+                });
+
+                // Update Pagination Dots
+                dots.forEach((dot, i) => {
+                    if (i === index) {
+                        dot.classList.remove("w-2", "bg-white/20", "hover:bg-white/40");
+                        dot.classList.add("w-8", "bg-[#28B8E8]");
+                    } else {
+                        dot.classList.remove("w-8", "bg-[#28B8E8]");
+                        dot.classList.add("w-2", "bg-white/20", "hover:bg-white/40");
+                    }
+                });
+
+                currentSlide = index;
+            };
+
+            const nextSlide = () => {
+                const nextIndex = (currentSlide + 1) % slides.length;
+                showSlide(nextIndex);
+            };
+
+            // Start Auto-Cycle (4500ms / 4.5 seconds)
+            const startSlider = () => {
+                slideInterval = setInterval(nextSlide, 4500);
+            };
+
+            const resetSliderTimer = () => {
+                clearInterval(slideInterval);
+                startSlider();
+            };
+
+            // Add click listeners to dots for manual navigation
+            dots.forEach((dot) => {
+                dot.addEventListener("click", (e) => {
+                    const targetIndex = parseInt(e.target.getAttribute("data-index"), 10);
+                    showSlide(targetIndex);
+                    resetSliderTimer(); // Resets auto-scroll timer when user clicks manually
+                });
+            });
+
+            // Initialize Auto Slider
+            startSlider();
+        });
+    </script>
+
+    <!-- header & footer link script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            // --- Step 1: Load HTML Partials (Header & Footer) ---
+            const includes = document.querySelectorAll("[data-include]");
+
+            for (const el of includes) {
+                const filePath = el.getAttribute("data-include");
+                try {
+                    const response = await fetch(filePath);
+                    if (!response.ok) {
+                        throw new Error(`Failed to load ${filePath}: ${response.statusText}`);
+                    }
+                    const htmlContent = await response.text();
+                    el.innerHTML = htmlContent;
+                } catch (error) {
+                    console.error("Error loading include:", error);
+                    el.innerHTML = `<p class="text-red-400 text-xs py-2">Failed to load ${filePath}</p>`;
+                }
+            }
+        });
+
+        // --- Step 2: Event Delegation for UI Controls ---
+        document.addEventListener("click", (e) => {
+            // 1. BACK TO TOP BUTTON HANDLER
+            const backToTopBtn = e.target.closest("#back-to-top");
+            if (backToTopBtn) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+                return;
+            }
+
+            // 2. MOBILE MENU DRAWER HANDLER
+            const openBtn = e.target.closest("#open-mobile-menu");
+            const closeBtn = e.target.closest("#close-mobile-menu");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            if (!mobileMenu) return;
+
+            // OPEN: Slide drawer down and lock scrolling
+            if (openBtn) {
+                mobileMenu.classList.remove("-translate-y-full");
+                mobileMenu.classList.add("translate-y-0");
+                document.body.style.overflow = "hidden";
+                document.documentElement.style.overflow = "hidden";
+                return;
+            }
+
+
+            // CLOSE: Slide drawer up and restore scrolling
+            const clickedMenuLink = e.target.closest("#mobile-menu nav a, #mobile-menu div a");
+            if (closeBtn || clickedMenuLink) {
+                mobileMenu.classList.remove("translate-y-0");
+                mobileMenu.classList.add("-translate-y-full");
+                document.body.style.overflow = "";
+                document.documentElement.style.overflow = "";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+</body>
+
+</html>
